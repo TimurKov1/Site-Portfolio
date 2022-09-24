@@ -1,0 +1,636 @@
+@font-face {
+    font-family: "Muller Light";
+    src: url("./ofont.ru_Muller.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: "Muller Regular Italic";
+    src: url("./Fontfabric\ -\ MullerRegularItalic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: "Muller Ultra Light Italic";
+    src: url("./Fontfabric\ -\ MullerRegularItalic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: "Trajan Pro 3";
+    src: url("./ofont.ru_Trajan.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: #fbf9f9;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.logo {
+    margin-top: 25px;
+    width: 86px;
+    height: 77px;
+    position: relative;
+    left: -30px;
+}
+
+.footer-block {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: "Muller Light";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 50.59px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.64px;
+    line-height: normal;
+    margin: 0;
+}
+
+.section-text {
+    font-family: "Trajan Pro 3";
+    font-size: 44px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 62.95px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 1.4px;
+    line-height: normal;
+    padding: 80px;
+    position: relative;
+}
+
+.span-text {
+    color: #c89617;
+    font-style: normal;
+    letter-spacing: 1.4px;
+    line-height: normal;
+}
+
+.car-main {
+    width: 257px;
+    height: 207px;
+    border-radius: 10px;
+    background-color: #fbf9f9;
+}
+
+.car {
+    background: url(./images/Прямоугольник\,_скругл._углы_1_копия.png) no-repeat;
+    width: 241px;
+    height: 195px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 8px;
+    top: 6px;
+}
+
+.car-2 {
+    background: url(./images/Прямоугольник\,_скругл._углы_1_копия_2.png) no-repeat;
+}
+
+.car > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presents {
+    width: 100%;
+}
+
+.circle {
+    width: 85px;
+    height: 85px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    z-index: 999;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-text-invisible {
+    display: none;
+}
+
+.birthday-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+}
+
+.container-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.container-img {
+    width: 52%;
+}
+
+.container-item > .presents-text > p {
+    color: #000000;
+    font-family: "Muller Light";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 38.59px;
+    font-style: normal;
+    letter-spacing: 0.72px;
+    line-height: normal;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-text {
+    color: #c89617;
+    font-family: "Muller Light";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.59px;
+    text-align: center;
+    color: #000000;
+    font-style: normal;
+    letter-spacing: 0.72px;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 0.72px;
+    line-height: normal;
+    text-align-last: left;
+    position: relative;
+    top: 10px;
+}
+
+.main {
+    background: url(./images/pngwing.com_-_2022-01-11T173833.900.png) no-repeat;
+    background-position-x: center;
+    min-height: 100vh;
+}
+
+.main-block {
+    width: 889px;
+    height: 372px;
+    box-shadow: 0 0 24px rgba(0, 0, 2, 0.24);
+    border-radius: 5px;
+    background-color: #fbf9f9;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+    margin-top: -850px;
+}
+
+.main-item {
+    width: 873px;
+    border-radius: 5px;
+    border: 1px solid #ece8e8;
+    background-color: #fbf9f9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 6px;
+}
+
+.main-item-2 {
+    height: 356px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-item-2 > div > p {
+    color: #000000;
+    font-family: "Muller Light";
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32.91px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    line-height: normal;
+    position: relative;
+    left: -10px;
+}
+
+.main-button {
+    padding-top: 20px;
+}
+
+.span-text-main {
+    font-size: 17px;
+    font-family: "Muller Ultra Light Italic";
+    position: relative;
+    top: -2px;
+}
+
+.bmw {
+    position: relative; 
+    width: 800px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    left: -200px;
+    top: 530px;
+}
+
+.first-main-img {
+    position: relative; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    left: -450px;
+    top: -300px;
+}
+
+.second-main-img {
+    position: relative; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    top: -500px;
+    left: 350px;
+}
+
+.main-img {
+    position: relative; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 600px;
+}
+
+.QR-code {
+    display: block; 
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+
+.main-blocks {
+    margin-top: -470px;
+}
+
+.img-main {
+    width: 170px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 430px;
+    top: 720px;
+}
+
+.button-item {
+    cursor: pointer;
+}
+
+.main-block > img {
+    position: relative; 
+    top: -75px; 
+    left: -30px;
+}
+
+.blur {
+    width: 1051px;
+    height: 1051px;
+    background-color: #fdeac2;
+    border-radius: 50%;
+    filter: blur(100px);
+    position: absolute;
+    z-index: 0;
+    left: -800px;
+}
+
+.main-section-text {
+    padding: 0;
+    font-size: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cars-block {
+    display: block;
+    margin-left: 19%;
+    width: 600px;
+}
+
+.cars-block > .block-car > .car-block {
+    margin-left: 20px;
+}
+
+.block-car {
+    display: inline-block;
+}
+
+.block-car > .car-block:last-child {
+    margin-top: 20px;
+}
+
+.presents-text {
+    margin-top: 20px;
+}
+
+.original-presents-img {
+    width: 650px;
+}
+
+@media screen and (min-width: 901px) {
+    .container-item > .presents-text > p {
+        width: 56%;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .original-presents-img {
+        width: 500px;
+        height: 400px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .original-presents-img {
+        display: none;
+    }
+
+    .cars-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1326px) {
+    .cars {
+        padding: 0px 100px;
+        margin-top: -65px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-text {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .cars {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .bmw {
+        display: none;
+    }
+
+    .img-main {
+        display: none;
+    }
+
+    .first-main-img {
+        display: none;
+    }
+
+    .second-main-img {
+        display: none;
+    }
+
+    .main-blocks {
+        margin-top: -40px;
+    }
+
+    .main-block {
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cars-2 {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .car-block {
+        margin-left: 20px;
+    }
+
+    .container-2 {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-item-2 {
+        display: block;
+    }
+
+    .main-item-2 > div > p {
+        text-align: center;
+    }
+
+    .main-item-2 {
+        padding-top: 50px;
+    }
+
+    .main-block {
+        width: 516px;
+        height: 295px;
+    }
+
+    .main-item {
+        width: 500px;
+        height: 280px;
+    }
+
+    .main-item-2 > img {
+        display: none;
+    }
+
+    .main-button {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .main-item > img {
+        top: 20px;
+    }
+
+    .main-block > img {
+        top: -50px;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .logo {
+        width: 59px;
+        height: 52px;
+        top: -8px;
+        left: -10px;
+    }
+
+    footer {
+        height: 90px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .footer-text-left {
+        width: 200px;
+    }
+
+    .footer-block {
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+
+    .birthday-img {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-text {
+        font-size: 10px;
+    }
+
+    .footer-text-left {
+        width: 120px;
+    }
+
+    .footer-text-right {
+        width: 120px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 42px;
+        top: -2px;
+        left: 8px;
+    }
+
+    .section-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .main-img {
+        width: 80%;
+    }
+
+    .main-block > img {
+        display: none;
+    }
+
+    .main-button > button {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: -20px;
+    }
+
+    .main-block {
+        width: 90%;
+        height: 415px;
+    }
+
+    .main-item {
+        width: 96%;
+        height: 400px;
+    }
+
+    .main-section-text {
+        font-size: 30px;
+        display: none;
+        line-height: 0.3;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .main-item-2 > div > p {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hidden-container {
+        display: block;
+    }
+
+    .cars-block-hidden {
+        display: none;
+    }
+
+    .container-block {
+        padding: 0px 50px;
+    }
+
+    .container-item > .presents-text > p {
+        width: 100%;
+    }
+
+    .blur {
+        display: none;
+    }
+}

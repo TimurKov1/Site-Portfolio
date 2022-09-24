@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    position: relative;
+    left: 91px;
+    top: 2px;
+}
+
+.menu_1 {
+    position: relative;
+    top: 19px;
+    margin-right: 141px;
+}
+
+.menu_1 a, .menu_2 a, .subnav > a {
+    text-decoration: none;
+    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
+
+.nav > p {
+    position: relative;
+    left: 3px;
+    top: 3px;
+    color: #C1A786;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.booking_button {
+    position: relative;
+    left: 51px;
+    color: #fff;
+    width: 167px;
+    height: 44px;
+    background: #C1A786;
+    border: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.button_a {
+    position: relative;
+    right: 14px;
+    top: 1px;
+}
+
+.main {
+    background: url(image/bg1.png);
+    background-size: cover;
+    height: 652px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: 245px;
+}
+
+.scroll_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: 280px;
+}
+
+.line {
+    width: 224px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 341px;
+}
+
+.small_line {
+    width: 103px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+}
+
+.polygon {
+    width: 18px;
+    height: 9px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.scroll_section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 300px;
+}    
+
+.menu_2 {
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 30px;
+    z-index: 999;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.menu_2 input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+.menu_2 span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #232323;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+.menu_2 span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menu_2 span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.menu_2 input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+.menu_2 input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu_2 input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu_2 > ul {
+    position: absolute;
+    width: 253px;
+    height: 226px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #fff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+    
+.menu_2 input:checked ~ ul { 
+    transform: none;
+    background-color: #fff;
+}
+
+.mobile_h1 {
+    display: none;
+}
+
+.second_footer > p {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #010101;
+}
+
+
+
+#book {
+    position: relative;
+    right: 100px;
+    top: 18px;
+}
+
+.footers {
+    padding: 44px 0 44px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_footer {
+    display: flex;
+    margin-left: 90px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.names {
+    margin-left: 25px;
+}
+
+.names > li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+}
+
+.names > li > a{
+    text-decoration: none;
+    color: #000;
+}
+
+.second_footer {
+    margin-right: 123px;
+}
+
+.second_footer > p:nth-child(2) {
+    margin-top: 6px;
+}
+
+.social_media {
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+i {
+    font-size: 20px;
+    color: #C1A786;
+    margin-left: 10px;
+}
+
+.class {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_section {
+    min-height: 82vh;
+    background-color: #FBFBFB;
+    padding: 37px 0;
+    margin-top: 12px;
+}
+
+.info_block {
+    height: 642px;
+    background-color: #fff;
+    position: relative;
+    top: 10px;
+}
+
+.text {
+    width: 38%;
+    margin-left: 90px;
+    position: relative;
+    top: 66px;
+}
+
+.text > p, .room > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #2E2E2E;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #404040;
+}
+
+.about_us {
+    height: 440px;
+    width: 676px;
+    position: relative;
+    top: 90px;
+    right: 50px;
+}
+
+.about_us_2 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: 120px;
+}
+
+.info_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #C1A786;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    width: 20px;
+}
+
+.change .bar2 {
+    width: 35px;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.subnav {
+    position: absolute;
+    left: -100%;
+    top: 81px;
+    height: 226px;
+    width: 253px;
+    background: #FBFBFB;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.subnav.open{
+    left: 0px;
+    z-index: 999;
+}
+
+.subnav > a {
+    font-size: 16px;
+    position: relative;
+    left: 45px;
+    margin-top: 20px;
+}
+
+.nav {
+    position: relative;
+    left: 75px;
+    top: 20px;
+}
+
+.subnav > a {
+    display: block;
+}
+
+.subnav {
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+    height: 82px;
+}
+
+.bar1, .bar2 {
+    height: 3px;
+}
+
+.bar2 {
+    width: 20px;
+}
+
+.nav {
+    position: relative;
+    top: 27px;
+}
+
+@media screen and (max-width: 360px) {
+    .nav {
+        position: relative;
+        left: 30px;
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    .about_us_2 {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .scroll_text {
+        display: none;
+    }
+
+    .scroll_section {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .info_block {
+        height: 1008px;
+    }
+
+    .text {
+        width: 85%;
+    }
+
+    .scroll_section {
+        position: relative;
+        top: 200px;
+    }
+
+    .about_us_2 {
+        display: block;
+    }
+
+    .info_block {
+        display: block;
+    }
+
+    .text > p {
+        font-size: 17px;
+    }
+
+    .about_us {
+        display: none;
+    }
+
+    .button_a {
+        position: relative;
+        top: 19px;
+        right: 90px;
+    }
+
+    .logo {
+        position: relative;
+        left: 34px;
+    }
+
+    .nav {
+        left: 35px;
+    }
+
+    .first_footer {
+        margin-left: 30px;
+    }
+
+    .second_footer {
+        margin-right: 30px;
+    }
+
+    .social_media {
+        margin-left: 15px;
+    }
+
+    .second_footer > p {
+        text-align: right;
+    }
+
+    h1 {
+        top: 164px;
+    }
+
+    .scroll_text {
+        display: block;
+        top: 200px;
+    }
+
+    .main {
+        background-size: 1286px 437px;
+        background-repeat: no-repeat;
+    }
+
+    #menu_2 {
+        display: block;
+    }
+
+    .menu_2 {
+        position: relative;
+        left: 50px;
+        top: 28px;
+    }
+
+    .class {
+        display: flex;
+        justify-content: space-between;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 35px;
+        top: 170px;
+    }
+
+    .scroll_text {
+        top: 190px;
+    }
+
+    .text {
+        position: relative;
+        left: -50px;
+    }
+}
+
+@media screen and (min-width: 411px) and (max-width: 470px) {
+    h1 {
+        font-size: 28px;
+        top: 174px;
+    }
+
+    .scroll_text {
+        top: 187px;
+        font-size: 16px;
+    }
+
+    .info_block {
+        height: 1058px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .info_block {
+        height: 1108px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .desktop_h1 {
+        display: none;
+    }
+
+    .mobile_h1 {
+        display: block;
+    }
+
+    h1 {
+        font-size: 28px;
+        top: 140px;
+    }
+
+    .scroll_section {
+        top: 170px;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .logo {
+        width: 50px;
+        top: 10px;
+        margin-right: 10px;
+    }
+
+    .nav {
+        left: 30px;
+    }
+
+    .booking_button {
+        width: 139px;
+        height: 36px;
+        top: 3px;
+        font-size: 13px;
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .logo {
+        position: relative;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .names {
+        position: relative;
+        right: 15px;
+        top: 5px;
+    }
+
+    .names > li {
+        font-size: 8px;
+    }
+
+    .second_footer > p {
+        font-size: 10px;
+    }
+
+    .second_footer {
+        position: relative;
+        top: 3px;
+    }
+
+    i {
+        font-size: 15px;
+    }
+
+    .footer_logo {
+        width: 46px;
+        height: 55px;
+        position: relative;
+        top: 12px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menu_2 {
+        margin-left: -20px;
+    }
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .text > p {
+        font-size: 13px;
+    }
+
+    .about_us {
+        top: 125px;
+        height: 367px;
+        width: 564px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1081px) {
+    .about_us {
+        top: 145px;
+        height: 338px;
+        width: 520px;
+    }
+
+    .text > p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .text {
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media screen and (min-width: 341px) and (max-width: 380px) {
+    .about_us_2 {
+        position: relative;
+        top: 79px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .info_block {
+        height: 1218px;
+    }
+
+    .text {
+        position: relative;
+        left: -65px;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    .about_us_2 {
+        position: relative;
+        top: 80px;
+    }
+}

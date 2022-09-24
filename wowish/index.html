@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .birthday-img_2 {
+            display: none;
+        }
+
+        .invisible-hidden {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .second-element {
+            display: block !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <section class="main">
+        <div>
+            <img style="position: absolute; width: 35%; left: -10%; top: -30px" src="./images/pngwing.com_-_2022-01-11T115032.489.png" alt="">
+            <img style="position: absolute; width: 65%; left: -30%; top: 100px;" src="./images/pngwing.com_-_2022-01-11T175820.626.png" alt="">
+            <img style="position: absolute; width: 25%; left: -19%; top: 350px;" src="./images/2-1681.png" alt="">
+            <img style="position: absolute; left: 78%; width: 40%;" src="./images/pngwing.com_-_2022-01-11T115032.489_копия.png" alt="">
+            <img style="position: absolute; width: 30%; left: 91%; top: 200px;" src="./images/2-1681_копия.png" alt="">
+            <img style="position: absolute; width: 20%; left: 70%; top: 460px;" src="./images/pngwing.com_-_2022-01-11T174123.864.png" alt="">
+        </div>
+        <h2 style="z-index: 100; position: relative;" class="section-text">Дари <span class="span-text">желанные</span><br>подарки с помощью<br>мобильного приложение</h2>
+        <div class="main-blocks">
+            <div class="main-images">
+                <img class="img-main" src="./images/pngwing.com_-_2022-01-11T174123.864_копия.png" alt="">
+                <img class="bmw" src="./images/bmw-3-series-modellfinder2.png" alt="">
+                <img class="main-img" src="./images/Слой_5.png" alt="">
+            </div>
+            <img class="first-main-img" src="./images/pngwing.com_-_2022-01-11T115032.489_копия_2.png" alt="">
+            <img class="second-main-img" src="./images/pngwing.com_-_2022-01-11T115032.489_копия_3.png" alt="">
+            <div class="main-block">
+                <div class="main-item">
+                    <div class="main-item-2">
+                        <div style="display: block; margin-top: auto; margin-bottom: auto;">
+                            <h2 class="section-text main-section-text">СКАЧАЙ <span class="span-text">WOWISH</span><img style="position: relative; top: 5px" src="./images/siz.png" alt=""></h2>
+                            <h2 class="section-text main-section-text hidden">СКАЧАЙ<br><span class="span-text">WOWISH</span><img style="position: relative; top: 5px" src="./images/siz.png" alt=""></h2>
+                            <p>по ссылке или наведи камеру на <span class="span-text">QR Code</span></p>
+                            <div class="main-button">
+                                <button class="button-item" style="border: none; background-color: transparent;"><img src="data:image/png;base64,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" alt=""></button>    
+                                <button class="button-item" style="border: none; background-color: transparent;"><img src="data:image/png;base64,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" alt=""></button>
+                            </div>
+                        </div>
+                        <img class="QR-code" src="./images/pngwing.com_-_2022-01-11T121941.532.png" alt="">
+                    </div>
+                </div>
+                <img src="./images/pngwing.com_-_2022-01-12T103914.439.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="presents">
+        <h2 class="section-text">Желанные <span class="span-text">подарки</span> для<br>самых любимых</h2>
+        <div class="container-2">
+            <div class="cars cars-2">
+                <div class="car-block">
+                    <div class="circle"></div>
+                    <div class="car-main">
+                        <div class="car">
+                            <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-block">
+                    <div class="circle"></div>
+                    <div class="car-main">
+                        <div class="car">
+                            <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-block">
+                    <div class="circle"></div>
+                    <div class="car-main">
+                        <div class="car">
+                            <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-block">
+                    <div class="circle"></div>
+                    <div class="car-main">
+                        <div class="car">
+                            <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="blur"></div>
+    <section class="birthday">
+        <h2 class="section-text">Не пропускайте<br><span class="span-text">дни рождения</span> любимых<span class="span-text">!</span></h2>
+        <img class="birthday-img" src="./images/Слой_6.png" alt="">
+        <img class="birthday-img_2" style="width: 50%; position: relative;" src="./images/AdobeStock_215796715.png" alt="">
+    </section>
+    <section class="original-presents">
+        <h2 class="section-text">Тысячи оригинальных<span class="span-text"> подарков</span><br>для самых любимых!</h2>
+        <div class="container">
+            <div class="container-2 hidden hidden-container">
+                <div class="cars cars-2">
+                    <div class="car-block">
+                        <div class="circle"></div>
+                        <div class="car-main">
+                            <div class="car">
+                                <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-block">
+                        <div class="circle"></div>
+                        <div class="car-main">
+                            <div class="car">
+                                <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-block">
+                        <div class="circle"></div>
+                        <div class="car-main">
+                            <div class="car">
+                                <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-block">
+                        <div class="circle"></div>
+                        <div class="car-main">
+                            <div class="car">
+                                <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-block">
+                <div class="container-item">
+                    <div class="cars-block cars-block-hidden">
+                        <div class="block-car">
+                            <div class="car-block">
+                                <div class="car-main">
+                                    <div class="car car-2">
+                                        <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-block">
+                                <div class="car-main">
+                                    <div class="car car-2">
+                                        <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-car block-car-2">
+                            <div class="car-block">
+                                <div class="car-main">
+                                    <div class="car car-2">
+                                        <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-block">
+                                <div class="car-main">
+                                    <div class="car car-2">
+                                        <img src="./images/bmw-3-series-modellfinder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presents-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        <p class="container-text">Подробней » <span class="span-text">Скачать приложение</span></p>
+                    </div>
+                </div>
+                <img class="original-presents-img" src="./images/AdobeStock_215796715.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-block"><p class="footer-text footer-text-left">WOWISH.ru © 2022. Все права защищены.</p></div>
+        <img class="logo" src="./images/logo.png" alt="">
+        <div class="footer-block"><p class="footer-text footer-text-right">Политика конфиденциальности<br>Пользовательское соглашение</p></div>
+    </footer>
+    <script>
+        var img = $('.birthday-img');
+        var offset = img.offset();
+        var offset_2 = offset.top;
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= offset_2) {
+                $('.birthday-img').fadeOut(200);
+                $('.birthday-img_2').fadeIn(1000);
+                $('.birthday-img_2').addClass('second-element')
+            }
+        });
+    </script>
+</body>
+</html>
