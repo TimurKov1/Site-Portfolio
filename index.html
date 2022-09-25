@@ -202,10 +202,10 @@
     </div>
     <div id="contacts" style="background: linear-gradient(to right, rgb(57, 169, 235), rgb(195, 43, 226));">
         <h2 style="color: #fff; -webkit-text-fill-color: #fff">Контакты</h2>
-        <form action="">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Номер телефона или e-mail">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+        <form>
+            <input class="username" name="username" type="text" placeholder="Имя" required>
+            <input class="phone" name="phone" type="text" placeholder="Номер телефона или e-mail" required>
+            <textarea class="message" name="message" placeholder="Сообщение" required></textarea>
             <button class="send" type="submit">Отправить</button>
         </form>
     </div>
@@ -213,6 +213,22 @@
         $('.spans').click(function() {
             $(this).toggleClass('open')
             $('.menu').toggleClass('mobile')
+        })
+        $('form').submit(function(e) {
+            e.preventDefault();
+            var form = $(this);
+            $.ajax({
+                type: 'POST',
+                url: 'mail.php',
+                data: form.serialize(),
+                dataType: 'html',
+                success: function(data) {
+                    $('.username').val('')
+                    $('.phone').val('')
+                    $('.message').val('')
+                    alert(data);
+                }
+            })
         })
     </script>
 </body>
